@@ -9,14 +9,11 @@ import javax.sql.DataSource;
 
 @Component
 public class DBRunner implements ApplicationRunner {
-
     @Autowired
     DataSource dataSource;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("DataSource 구현 클래스 이름 = " + dataSource.getClass().getName());
-
     }
-
 }
